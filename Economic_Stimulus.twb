@@ -1,0 +1,1015 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0209.1653                               -->
+<workbook original-version='18.1' source-build='2022.4.1 (20224.23.0209.1653)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (EconomicStimulusData)' inline='true' name='federated.1wzbgwi11nl8ew17ueima1elt05o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EconomicStimulusData' name='excel-direct.15xr4az16ntdwp1cncftt0jlxd2n'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ly266e/Documents/Training/CMU/Master/Spring 2023 Mini 4/Data_Visualization/Week_2/Practice/EconomicStimulusData.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.15xr4az16ntdwp1cncftt0jlxd2n' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+            <column datatype='date' date-parse-format='yyyyQQQ' name='Time' ordinal='0' />
+            <column datatype='real' name='Economic Stimulus' ordinal='1' />
+            <column datatype='real' name='No Economic Stimulus' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.15xr4az16ntdwp1cncftt0jlxd2n' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+            <column datatype='date' date-parse-format='yyyyQQQ' name='Time' ordinal='0' />
+            <column datatype='real' name='Economic Stimulus' ordinal='1' />
+            <column datatype='real' name='No Economic Stimulus' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C11:no:A1:C11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economic Stimulus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Economic Stimulus]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Economic Stimulus</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No Economic Stimulus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No Economic Stimulus]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>No Economic Stimulus</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Economic Stimulus]' role='measure' type='quantitative' />
+      <column datatype='real' name='[No Economic Stimulus]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Time]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='&quot;2008Q3&quot;' value='8Q3' />
+          <alias key='&quot;2008Q4&quot;' value='8Q4' />
+          <alias key='&quot;2009Q1&quot;' value='9Q1' />
+          <alias key='&quot;2009Q2&quot;' value='9Q2' />
+          <alias key='&quot;2009Q3&quot;' value='9Q3' />
+          <alias key='&quot;2009Q4&quot;' value='9Q4' />
+          <alias key='&quot;2010q1&quot;' value='10Q1' />
+          <alias key='&quot;2010Q2&quot;' value='10Q2' />
+          <alias key='&quot;2010Q3&quot;' value='10Q3' />
+          <alias key='&quot;2010Q4&quot;' value='10Q4' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_56D7C781C9C0442998CDBF2710E536B3]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sheet1_56D7C781C9C0442998CDBF2710E536B3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_56D7C781C9C0442998CDBF2710E536B3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No Economic Stimulus]' derivation='Avg' name='[avg:No Economic Stimulus:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No Economic Stimulus]' derivation='Count' name='[cnt:No Economic Stimulus:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Economic Stimulus]' derivation='Sum' name='[sum:Economic Stimulus:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No Economic Stimulus]' derivation='Sum' name='[sum:No Economic Stimulus:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[__tableau_internal_object_id__].[cnt:Sheet1_56D7C781C9C0442998CDBF2710E536B3:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[avg:No Economic Stimulus:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[cnt:No Economic Stimulus:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_56D7C781C9C0442998CDBF2710E536B3'>
+            <properties context=''>
+              <relation connection='excel-direct.15xr4az16ntdwp1cncftt0jlxd2n' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+                  <column datatype='date' date-parse-format='yyyyQQQ' name='Time' ordinal='0' />
+                  <column datatype='real' name='Economic Stimulus' ordinal='1' />
+                  <column datatype='real' name='No Economic Stimulus' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>Fiscal Stimulus Makes a Significant Difference on</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontsize='16'>Æ </run>
+            <run bold='true' fontcolor='#e15759' fontsize='16'>Uneployment Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (EconomicStimulusData)' name='federated.1wzbgwi11nl8ew17ueima1elt05o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wzbgwi11nl8ew17ueima1elt05o'>
+            <column datatype='real' name='[Economic Stimulus]' role='measure' type='quantitative' />
+            <column datatype='real' name='[No Economic Stimulus]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Time]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='&quot;2008Q3&quot;' value='8Q3' />
+                <alias key='&quot;2008Q4&quot;' value='8Q4' />
+                <alias key='&quot;2009Q1&quot;' value='9Q1' />
+                <alias key='&quot;2009Q2&quot;' value='9Q2' />
+                <alias key='&quot;2009Q3&quot;' value='9Q3' />
+                <alias key='&quot;2009Q4&quot;' value='9Q4' />
+                <alias key='&quot;2010q1&quot;' value='10Q1' />
+                <alias key='&quot;2010Q2&quot;' value='10Q2' />
+                <alias key='&quot;2010Q3&quot;' value='10Q3' />
+                <alias key='&quot;2010Q4&quot;' value='10Q4' />
+              </aliases>
+            </column>
+            <column-instance column='[Economic Stimulus]' derivation='Sum' name='[sum:Economic Stimulus:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[No Economic Stimulus]' derivation='Sum' name='[sum:No Economic Stimulus:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time]' derivation='Quarter-Trunc' name='[tqr:Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</column>
+            <column>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]' field-type='quantitative' max='11.5' min='5.5' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]' scope='cols' value='true' />
+            <format attr='title' class='0' field='[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]' scope='rows' value='' />
+            <format attr='display' class='0' field='[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='3' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]' value='false' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_0' value='#fafafa00' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='stroke-size' id='annotation_2' value='0' />
+            <format attr='line-visibility' id='annotation_2' value='off' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+            <format attr='stroke-size' id='annotation_3' value='0' />
+            <format attr='line-visibility' id='annotation_3' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</rows>
+        <cols>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2008-10-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>6.7000000000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-01-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>7.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-10-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>8.5999999999999996</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2008-10-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>6.7999999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-01-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>7.7999999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-04-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>8.8000000000000007</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-07-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>9.6999999999999993</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-10-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>10.4</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2010-01-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>10.800000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2010-04-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>10.9</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2010-07-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                <value>11.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2008-07-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>5.9000000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-04-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>7.7999999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-07-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>8.4000000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2010-01-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>8.9000000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2010-04-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>8.9000000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                  <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2010-07-01 00:00:00#</value>
+                <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                <value>8.6999999999999993</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#e15759' fontsize='14'><![CDATA[<[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#e15759'>Uneployment Rate is </run>
+              <run bold='true' fontcolor='#e15759' fontsize='12'>lower</run>
+              <run fontcolor='#e15759' fontsize='12'>Æ </run>
+              <run fontcolor='#e15759'>after Economic Stimulus</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                      <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                      <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2010-10-01 00:00:00#</value>
+                    <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:Economic Stimulus:qk]&quot;</value>
+                    <value>8.5</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-27' y='43' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontsize='14'><![CDATA[<[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]>]]></run>
+              <run>&#10;Uneployment Rate is </run>
+              <run bold='true' fontsize='12'>higher</run>
+              <run fontsize='12'>Æ </run>
+              <run bold='true'>without</run>
+              <run> Economic Stimulus</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</field>
+                      <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+                      <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2010-10-01 00:00:00#</value>
+                    <value>&quot;[federated.1wzbgwi11nl8ew17ueima1elt05o].[sum:No Economic Stimulus:qk]&quot;</value>
+                    <value>11.1</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-27' y='53' />
+          </annotation>
+          <annotation class='area' id='3' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontsize='22'>Economic Stimulus is a </run>
+              <run bold='true' fontsize='24'>sucessful</run>
+              <run fontsize='22'>Æ </run>
+              <run>Æ&#10;</run>
+              <run fontsize='22'>way to lower uneployment</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='#2008-05-20 13:36:36.053#'>
+                  <node-reference>
+                    <axis>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='11.5'>
+                  <node-reference>
+                    <axis>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='#2009-04-23 03:27:18.291#'>
+                  <node-reference>
+                    <axis>[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='9.6276595744680851'>
+                  <node-reference>
+                    <axis>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{AB3127A8-B762-462A-B4F1-850F839F3FE1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='157'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1wzbgwi11nl8ew17ueima1elt05o].[tqr:Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[:Measure Names]</field>
+            <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[Multiple Values]</field>
+            <field>[federated.1wzbgwi11nl8ew17ueima1elt05o].[none:Time:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE507611-9BBA-4C06-9A8C-0485A77C4CFA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
